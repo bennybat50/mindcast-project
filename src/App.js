@@ -6,6 +6,8 @@ import ContentPage from './pages/Content-Page';
 import InterestPage from './pages/InterestPage';
 import HostRequest from './pages/HostRequest';
 import Users from './pages/Users';
+import Website from './pages/Website/Website';
+import Business from './pages/Website/Business';
 
 
 function App() {  
@@ -14,13 +16,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Index/>}/>
-          <Route path='contentPage' element={<ContentPage/>} component={ContentPage} />
-          <Route path='createInterest' element={<InterestPage/>}/>
-          <Route path='hostrequest' element={<HostRequest/>}/>
-          <Route path='users' element={<Users/>}/>
-
-         
+          <Route path='/' element={<Website />}/>
+          <Route path='/business' element={<Business />}/>
+          <Route path='/admin' element={<Index/>}/>
+          <Route path='/admin/contentPage' element={<ContentPage/>} component={ContentPage} />
+          <Route path='/admin/createInterest' element={<InterestPage/>}/>
+          <Route path='/admin/hostrequest' element={<HostRequest/>}/>
+          <Route path='/admin/users' element={<Users/>}/>
         </Routes>
       </BrowserRouter>
     </div>
