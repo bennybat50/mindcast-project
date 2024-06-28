@@ -52,7 +52,7 @@ function Footer() {
                   <a href="/support">Support</a>{" "}
                 </li>
                 <li>
-                  <a href="/tems">Terms Of Us</a>{" "}
+                  <a href="/terms">Terms Of Us</a>{" "}
                 </li>
               </ul>
             </div>
