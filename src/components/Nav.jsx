@@ -5,7 +5,7 @@ function Nav() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg margin30">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="/">
             <img src={Logo} alt="" />
           </a>
