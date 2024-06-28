@@ -1,28 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from 'react'
+import WebsiteLayout from '../../components/WebsiteLayout'
+import Img1 from "../../assets/image/Avatar.png";
+import Img2 from "../../assets/image/Group 120468 (1).png";
+import Img3 from "../../assets/image/union-1 (1).png";
+import Img4 from "../../assets/image/union-1 2.png";
+import Img5 from "../../assets/image/Apple iPhone 11 Pro Gold (2) 1.png";
+import Img7 from "../../assets/image/Group 120524 1.png";
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link  rel="shortcut icon" type="image/x-icon" href="/image/app_logo.png" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>MINDCASTS</title>
-</head>
-
-<body>
-    <div class="">
-        <div class="container margin30" id="nav_bar">
-          
-        </div>
-        <div class="banner1">
+function Resources() {
+  return (
+    <div>
+        <WebsiteLayout>
+            <div className="Resources">
+            <div class="banner1">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="pic90">
-                            <img src="/image/Apple iPhone 11 Pro Gold (2) 1.png" alt="">
+                            <img src={Img5} alt=""/>
                         </div>
                     </div>
                     <div class="col-md-9">
@@ -34,7 +29,7 @@
                                     available online or through meditation apps that can help you get started with this
                                     practice.</p>
                                 <div class="first margin30">
-                                    <img src="/image/Avatar.png" alt="">
+                                    <img src={Img1} alt=""/>
                                     <div class="">
                                         <p class="m-0"><b>Sigmund Owen</b></p>
                                         <span>Author</span>
@@ -43,14 +38,14 @@
                             </div>
                             <div class="second">
                                 <div class="first">
-                                    <img src="/image/Group 120468 (1).png" alt="">
+                                    <img src={Img2} alt=""/>
                                     <div class="">
                                         <p class="m-0">Time 20hr 50mins</p>
                                     </div>
                                 </div>
                                 <div class="second">
-                                    <img src="/image/union-1 (1).png" alt="">
-                                    <img src="/image/union-1 2.png" alt="">
+                                    <img src={Img3} alt=""/>
+                                    <img src={Img4} alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +60,7 @@
                 <div class="row">
                     <div class="col-md-5 mb-3">
                         <div class="each">
-                            <img src="https://res.cloudinary.com/da1mxvbx2/image/upload/v1708949607/simplecv/b66da345fc5d4da78b50d01dadec00f7_1_igezma.png" alt="">
+                            <img src="https://res.cloudinary.com/da1mxvbx2/image/upload/v1708949607/simplecv/b66da345fc5d4da78b50d01dadec00f7_1_igezma.png" alt=""/>
                             <div class="text">
                                 <p><b>Imposter Syndrome	</b></p>
                                 <p>Feeling under? Take a quick check survey</p>
@@ -77,7 +72,7 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-5 mb-3">
                         <div class="each">
-                            <img src="https://res.cloudinary.com/da1mxvbx2/image/upload/v1693310265/616534_I_am_letting_go_of_tension._I_am_surrendering_to_t_xl-1024-v1-0_j0y9bl.png" alt="">
+                            <img src="https://res.cloudinary.com/da1mxvbx2/image/upload/v1693310265/616534_I_am_letting_go_of_tension._I_am_surrendering_to_t_xl-1024-v1-0_j0y9bl.png" alt=""/>
                             <div class="text">
                                 <p><b>Happy Minds</b></p>
                                 <p>Feeling under? Take a quick check survey</p>
@@ -90,7 +85,7 @@
                 <div class="row">
                     <div class="col-md-5 mb-3">
                         <div class="each">
-                            <img src="http://res.cloudinary.com/da1mxvbx2/image/upload/v1707838483/simplecv/AI_Generated_Image_2024-02-11_445349673010201_srsuaa.jpg" alt="">
+                            <img src="http://res.cloudinary.com/da1mxvbx2/image/upload/v1707838483/simplecv/AI_Generated_Image_2024-02-11_445349673010201_srsuaa.jpg" alt=""/>
                             <div class="text">
                                 <p><b>Working with boredom	</b></p>
                                 <p>Feeling under? Take a quick check survey</p>
@@ -102,7 +97,7 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-5 mb-3">
                         <div class="each">
-                            <img src="http://res.cloudinary.com/da1mxvbx2/image/upload/v1707838690/simplecv/AI_Generated_Image_2024-02-13_445534668003201_y6ru3l.jpg" alt="">
+                            <img src="http://res.cloudinary.com/da1mxvbx2/image/upload/v1707838690/simplecv/AI_Generated_Image_2024-02-13_445534668003201_y6ru3l.jpg" alt=""/>
                             <div class="text">
                                 <p><b>Calming Exhalation</b></p>
                                 <p>Feeling under? Take a quick check survey</p>
@@ -115,7 +110,7 @@
                 <div class="row">
                     <div class="col-md-5 mb-3">
                         <div class="each">
-                            <img src="http://res.cloudinary.com/da1mxvbx2/image/upload/v1707856665/simplecv/eb103f20-f763-4cbe-a5f0-fb9ef8eeb658_xtpge6.gif" alt="">
+                            <img src="http://res.cloudinary.com/da1mxvbx2/image/upload/v1707856665/simplecv/eb103f20-f763-4cbe-a5f0-fb9ef8eeb658_xtpge6.gif" alt=""/>
                             <div class="text">
                                 <p><b>Building confidence</b></p>
                                 <p>Feeling under? Take a quick check survey</p>
@@ -127,7 +122,7 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-5 mb-3">
                         <div class="each">
-                            <img src="http://res.cloudinary.com/da1mxvbx2/image/upload/v1707856894/simplecv/08f8e7eb-994f-4841-b955-92d991b7703c_oyxgxf.gif" alt="">
+                            <img src="http://res.cloudinary.com/da1mxvbx2/image/upload/v1707856894/simplecv/08f8e7eb-994f-4841-b955-92d991b7703c_oyxgxf.gif" alt=""/>
                             <div class="text">
                                 <p><b>Letting go of anxiety, stress and worries	</b></p>
                                 <p>Feeling under? Take a quick check survey</p>
@@ -144,35 +139,28 @@
             <div class="section3 ">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 pt-5">
+                        <div class="col-md-6 pt-5 pb-5">
                             <div class="text">
                                 <span>Get Started</span>
                                 <h3><b>Better days ahead of you</b></h3>
-                                <p>We have created curated, endless resources and guides to help you get to that
+                                <p className='mb-4'>We have created curated, endless resources and guides to help you get to that
                                     upliftment stage. Also interact with like-mind people by joining different interest
                                     discussions or following your fav host</p>
-                                <a href="/host.html" target="_blank">Download the app</a>
+                                <a href="/host" target="_blank">Download the app</a>
                             </div>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-5 pt-5">
-                            <img src="/image/Group 120524 1.png" alt="">
+                            <img src={Img7} alt=""/>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer margin60" id="footer_side">
-           
-        </div>
+            </div>
+        </WebsiteLayout>
     </div>
+  )
+}
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/script/script.js"></script>
-</body>
-
-</html>
+export default Resources

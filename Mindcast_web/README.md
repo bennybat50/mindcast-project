@@ -1,2 +1,0 @@
-# Mindcast_web
- 
