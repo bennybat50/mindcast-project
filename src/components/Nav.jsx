@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from '../assets/image/LOGO MINDCASTS.png'
+import Logo from "../assets/image/LOGO MINDCASTS.png";
 
 function Nav() {
   return (

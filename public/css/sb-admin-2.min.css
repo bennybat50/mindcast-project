@@ -4606,14 +4606,14 @@ input[type=submit].btn-block {
     text-decoration: none
 }
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
     content: "";
     background: 50%/100% 100% no-repeat
-}
+} */
 
 .navbar-nav-scroll {
     max-height: 75vh;

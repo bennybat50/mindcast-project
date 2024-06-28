@@ -20,6 +20,9 @@
   background-color: #EBE0FD !important;
 }
 
+.dark{
+  color: var(--color-second) !important;
+}
 .ml100 {
   margin-left: 100px !important;
 }
