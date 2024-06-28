@@ -40,14 +40,16 @@ function Business() {
           .removeEventListener(event, handleSlideChange);
       });
     };
-  }, []);
+  });
 
   const handleBuyItemClick = () => {
+
     if (emailAddress === "") {
       alert("Please provide your email address");
     } else if (assignedName === "") {
       alert("Please provide your Business Name");
     } else {
+      setLoading(true);
       const paymentData = {
         assignedName,
         email: emailAddress,
@@ -68,6 +70,7 @@ function Business() {
         .then((data) => {
           console.log(data);
           if (data.status === true) {
+            setLoading(true);
             window.location.href = data.data.paymentLink.url;
           }
         })
@@ -75,8 +78,7 @@ function Business() {
           alert("Error occurred!");
           setLoading(false);
         });
-
-      setLoading(true);
+     
     }
   };
 
@@ -197,7 +199,7 @@ function Business() {
                         <div class="row">
                           <div class="col-md-4">
                             <a
-                              href="#"
+                              href="."
                               style={{ cursor: "pointer !important;" }}
                               class="btn btn-primary"
                               id="buyItem"
@@ -212,6 +214,7 @@ function Business() {
                               href="https://calendly.com/mindcasts-info/30min?month=2024-06"
                               target="_blank"
                               class="btn btn-secondary"
+                              rel="noreferrer"
                             >
                               Book a free demo
                             </a>
@@ -558,6 +561,7 @@ function Business() {
                                 class="btn-purple"
                                 data-bs-toggle="modal"
                                 data-bs-target="#exampleModal"
+                                href="."
                               >
                                 View Plan
                               </a>
@@ -567,6 +571,7 @@ function Business() {
                                 href="https://calendly.com/mindcasts-info/30min?month=2024-06"
                                 target="_blank"
                                 class="btn-purple text-white"
+                                rel="noreferrer"
                               >
                                 Book a free demo
                               </a>

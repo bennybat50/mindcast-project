@@ -92,7 +92,7 @@ function Support() {
                         <br />
                         <div class="col-md-12">
                           <div class="send">
-                            <a id="send_message" class="text-light" href="#">
+                            <a id="send_message" class="text-light" href=".">
                               <span>Contact Us</span> <i class="arrow"></i>
                             </a>
                           </div>

@@ -32,7 +32,7 @@ function App() {
           <Route path='/support' element={<Support/>}/>
           <Route path='/terms' element={<Terms/>}/>
           <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
-          /** ADMIN ROUTES */
+         { /** ADMIN ROUTES */}
           <Route path='/admin' element={<Index/>}/>
           <Route path='/admin/contentPage' element={<ContentPage/>} component={ContentPage} />
           <Route path='/admin/createInterest' element={<InterestPage/>}/>
