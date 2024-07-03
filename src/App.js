@@ -15,6 +15,7 @@ import Host from './pages/Website/Host';
 import Support from './pages/Website/Support';
 import PrivacyPolicy from './pages/Website/PrivacyPolicy';
 import Terms from './pages/Website/Terms';
+import Checkout from './pages/Website/Checkout';
 
 
 
@@ -24,20 +25,22 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<HomePage />}/>
-          <Route path='/business' element={<Business />}/>
-          <Route path='/about' element={<About />}/>
-          <Route path='/resources' element={<Resources />}/>
-          <Route path='/host' element={<Host/>}/>
-          <Route path='/support' element={<Support/>}/>
-          <Route path='/terms' element={<Terms/>}/>
-          <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
-         { /** ADMIN ROUTES */}
-          <Route path='/admin' element={<Index/>}/>
-          <Route path='/admin/contentPage' element={<ContentPage/>} component={ContentPage} />
-          <Route path='/admin/createInterest' element={<InterestPage/>}/>
-          <Route path='/admin/hostrequest' element={<HostRequest/>}/>
-          <Route path='/admin/users' element={<Users/>}/>
+        <Route path='/' element={<HomePage />}/>
+        <Route path='/business' element={<Business />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/resources' element={<Resources />}/>
+        <Route path='/host' element={<Host/>}/>
+        <Route path='/support' element={<Support/>}/>
+        <Route path='/terms' element={<Terms/>}/>
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
+
+        { /** ADMIN ROUTES */}
+        <Route path='/admin' element={<Index/>}/>
+        <Route path='/admin/contentPage' element={<ContentPage/>} component={ContentPage} />
+        <Route path='/admin/createInterest' element={<InterestPage/>}/>
+        <Route path='/admin/hostrequest' element={<HostRequest/>}/>
+        <Route path='/admin/users' element={<Users/>}/>
         </Routes>
       </BrowserRouter>
     </div>

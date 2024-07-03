@@ -79,7 +79,7 @@ function Business() {
           console.log(data);
           if (data.status === true) {
             setLoading(true);
-            //window.location.href = data.data.paymentLink.url;
+            window.location.href = data.data.paymentLink.url;
           }
         })
         .catch((error) => {
@@ -221,7 +221,7 @@ function Business() {
                               id="buyItem"
                               onClick={handleBuyItemClick}
                             >
-                              {loading? 'Processing...' : ' Buy Now '}
+                              {loading?  <div class='loader'></div> : ' Buy Now '}
                              
                             </a>
                           </div>
