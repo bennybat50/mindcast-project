@@ -10,6 +10,7 @@ import Img8 from "../../assets/image/business/business-3.png";
 import Img9 from "../../assets/image/business/business-5.png";
 import WebsiteLayout from "../../components/WebsiteLayout";
 import Img11 from "../../assets/image/Group 120524 1.png";
+import { Link } from "react-router-dom";
 
 function Business() {
   
@@ -214,8 +215,8 @@ function Business() {
                       <div class="container text-center">
                         <div class="row">
                           <div class="col-md-4">
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               style={{ cursor: "pointer !important;" }}
                               class="btn btn-primary"
                               id="buyItem"
@@ -223,17 +224,17 @@ function Business() {
                             >
                               {loading?  <div class='loader'></div> : ' Buy Now '}
                              
-                            </a>
+                            </Link>
                           </div>
                           <div class="col-md-5">
-                            <a
-                              href="https://calendly.com/mindcasts-info/30min?month=2024-06"
+                            <Link
+                              to="https://calendly.com/mindcasts-info/30min?month=2024-06"
                               target="_blank"
                               class="btn btn-secondary"
                               rel="noreferrer"
                             >
                               Book a free demo
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
