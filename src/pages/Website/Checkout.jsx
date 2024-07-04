@@ -82,7 +82,7 @@ function Checkout () {
                     ),
                     true: (
                       <div class='text-center'>
-                        <h1 class='text-dark'>Thank you for Purchase </h1>
+                        <h1 class='text-dark'>Thank you for Subscription </h1>
                         <hr />
                         <h6 id='subtitleText'>
                           Your employees coupon codes has been sent to your
