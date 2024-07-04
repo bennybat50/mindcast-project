@@ -56,8 +56,7 @@ function Business() {
       alert("Please provide your email address");
     } else if (assignedName === "") {
       alert("Please provide your Business Name");
-    } else {
-      alert("here");
+    } else { 
       setLoading(true);
       const paymentData = {
         assignedName,
