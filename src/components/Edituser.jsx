@@ -7,7 +7,7 @@ function EditUserProfileModal({ user }) {
   const [username, setUsername] = useState(user.username);
   const [mood, setMood] = useState(user.mood);
   const [experience, setExperience] = useState(user.experience);
-  const [error, setError] = useState(null);
+
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -16,7 +16,7 @@ function EditUserProfileModal({ user }) {
       await axios.put(`${BASE_URL}${USER_DOMAIN}/user/setting/${user.id}`, updatedUser);
      
     } catch (error) {
-      setError(error);
+      
     }
   };
 
