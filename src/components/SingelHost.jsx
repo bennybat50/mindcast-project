@@ -5,7 +5,7 @@ import { BASE_URL, USER_DOMAIN } from '../utils/config';
 
 export default function SingleHost({props}) {
     const [user, setUser] = useState("");
-    const [error, setError] = useState(null);
+     
 
     useEffect(() => {
         const fetchData = async () => {
@@ -16,7 +16,7 @@ export default function SingleHost({props}) {
                 setUser(res.data.data);
                 console.log(res.data.data)
             } catch (error) { 
-                setError(error);
+                 
             } 
         };
 

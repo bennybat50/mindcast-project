@@ -10,13 +10,16 @@ import Img8 from "../../assets/image/business/business-3.png";
 import Img9 from "../../assets/image/business/business-5.png";
 import WebsiteLayout from "../../components/WebsiteLayout";
 import Img11 from "../../assets/image/Group 120524 1.png";
+import { Link } from "react-router-dom";
 
 function Business() {
+  
   const [employeeCount, setEmployeeCount] = useState(5);
   const [totalCost, setTotalCost] = useState(249.95);
   const [emailAddress, setEmailAddress] = useState("");
   const [assignedName, setAssignedName] = useState("");
   const [loading, setLoading] = useState(false);
+  const [firstLoad, setFirstLoad] = useState(false);
 
   const events = ["mousemove", "touchmove"];
 
@@ -27,6 +30,11 @@ function Business() {
   };
 
   useEffect(() => {
+    if(!firstLoad){
+      document.getElementById("customRange1").value=5;
+      setFirstLoad(true)
+    }
+    
     events.forEach((event) => {
       document
         .getElementById("customRange1")
@@ -48,7 +56,7 @@ function Business() {
       alert("Please provide your email address");
     } else if (assignedName === "") {
       alert("Please provide your Business Name");
-    } else {
+    } else { 
       setLoading(true);
       const paymentData = {
         assignedName,
@@ -100,7 +108,7 @@ function Business() {
                     <div class="modal-header">
                       <button
                         type="button"
-                        class="btn-close"
+                        class="btn-close btn-light"
                         data-bs-dismiss="modal"
                         aria-label="Close"
                       ></button>
@@ -108,7 +116,7 @@ function Business() {
                     <div class="modal-body">
                       <div class="container p-4">
                         <h1>
-                          <b>The Plan</b>
+                          <b className="text-white">The Plan</b>
                         </h1>
                         <h5>
                           Support Employee Well-being, Propel Business Success.
@@ -119,7 +127,15 @@ function Business() {
                         </small>
                         <small>
                           If you need subscription for more than 100 employee,{" "}
-                          <b>please Book a demo</b>.
+                          <a
+                              href="https://calendly.com/mindcasts-info/30min?month=2024-06"
+                              target="_blank"
+                              class="text-info"
+                              rel="noreferrer"
+                            >
+                             <b class="text-info"> please book a demo</b>
+                            </a>
+                           
                         </small>
                         <br />
                         <br />
@@ -198,26 +214,26 @@ function Business() {
                       <div class="container text-center">
                         <div class="row">
                           <div class="col-md-4">
-                            <a
-                              href="."
+                            <Link
+                              to="#"
                               style={{ cursor: "pointer !important;" }}
                               class="btn btn-primary"
                               id="buyItem"
                               onClick={handleBuyItemClick}
                             >
-                              {loading? 'Processing...' : ' Buy Now '}
+                              {loading?  <div class='loader'></div> : ' Buy Now '}
                              
-                            </a>
+                            </Link>
                           </div>
                           <div class="col-md-5">
-                            <a
-                              href="https://calendly.com/mindcasts-info/30min?month=2024-06"
+                            <Link
+                              to="https://calendly.com/mindcasts-info/30min?month=2024-06"
                               target="_blank"
                               class="btn btn-secondary"
                               rel="noreferrer"
                             >
                               Book a free demo
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

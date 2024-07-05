@@ -695,3 +695,7 @@
     width: 100% !important;
   }
 }
+
+.form-control{
+  padding: 30px 20px !important;
+}

@@ -1,6 +1,7 @@
 {
-  "name": "stucademy_website",
+  "name": "mindcasts",
   "version": "0.1.0",
+  "homepage": "https://mindcasts.life",
   "private": true,
   "dependencies": {
     "@cloudinary/react": "^1.12.0",
