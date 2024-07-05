@@ -28,7 +28,8 @@ function AllHostsRequest(props) {
       };
     return(
         <>
-        <div className="row">
+        <div className="container">
+        <div className="row mt-4">
           <div className="col-xl-8 col-lg-7">
             <div className="card mb-4">
               <div className="card-header py-3 flex-row">
@@ -94,6 +95,7 @@ function AllHostsRequest(props) {
               </div>
             </div>
           </div>
+        </div>
         </div>
         </>
     )

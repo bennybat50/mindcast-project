@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { BASE_URL, USER_DOMAIN } from '../utils/config';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import Search from "./Search";
 
 
 
@@ -83,7 +84,7 @@ function CreateInterest() {
 
             <div className="w-100 container-fluid bg-light pt-4">
                 <div className="d-sm-flex justify-content-between mb-4">
-                    <h1 className="h2 mb-0 dashboard">Dashboard</h1>
+                    <h1 className="h2 mb-0  text-dark">Dashboard</h1>
                     <div className="d-flex flex-column flex-sm-row">
                         <div style={{ marginTop: 10 + 'px' }} className="create-content order-sm-1">
                             <button className="dropdown-item" data-toggle="modal" data-target="#logoutModal">Create Interest <span><i class="bi bi-plus"></i></span></button>
@@ -102,9 +103,7 @@ function CreateInterest() {
                         <h6 className="m-0 font-weight-bold text-dark">All Interests</h6>
                     </div>
                     <div className="all-users-scroll">
-                        <div className="p-4 search-users">
-                            <input type="text" placeholder="Search Interests..." />
-                        </div>
+                        <Search />
                         <div className="container  pb-4">
                             <div className="table-responsive">
                                 <table className="table">

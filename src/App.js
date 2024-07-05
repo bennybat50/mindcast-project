@@ -2,6 +2,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './styles/style.css';
+import './styles/sb-admin-2.min.css';
 import Index from './pages';
 import ContentPage from './pages/Content-Page';
 import InterestPage from './pages/InterestPage';

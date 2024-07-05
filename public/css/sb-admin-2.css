@@ -9784,6 +9784,15 @@ html {
   min-height: 100%;
 }
 
+.sidebar{
+  height: 100px !important;
+}
+
+.ovverflow{
+  height: 90%;
+  overflow: scroll;
+}
+
 body {
   height: 100%;
 }
@@ -10321,7 +10330,7 @@ a:focus {
 
 .sidebar {
   width: 6.5rem;
-  min-height: 100vh;
+  height: 100vh !important;
 }
 
 .sidebar .nav-item {

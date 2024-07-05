@@ -5,14 +5,13 @@ import Content from '../components/Contents';
 
 const ContentPage = () => {
     return (
-    <div className="d-flex">
-        <Sidebar />
-
-        <div style={{ width: 100 + "%" }}>
-            <NavBar />
-            <Content className="p-3"/>
-        </div>
-    </div>)
+        <div className="d-flex">
+            <Sidebar />
+            <div style={{ width: 100 + "%" }}>
+                <NavBar />
+                <Content className="p-3" />
+            </div>
+        </div>)
 }
 
 export default ContentPage
