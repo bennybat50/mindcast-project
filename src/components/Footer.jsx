@@ -57,6 +57,9 @@ function Footer() {
               </ul>
             </div>
           </div>
+          <div className="text-center">
+            <small className="text-dark" style={{ fontSize:"10px" }}>UXWEDESIGN is the owner of Mindcasts App</small>
+          </div>
         </div>
       </div>
     </div>

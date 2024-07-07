@@ -17,6 +17,7 @@ import Support from './pages/Website/Support';
 import PrivacyPolicy from './pages/Website/PrivacyPolicy';
 import Terms from './pages/Website/Terms';
 import Checkout from './pages/Website/Checkout';
+import DeleteAccount from './pages/Website/DeleteAccount';
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path='/terms' element={<Terms/>}/>
         <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
         <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/delete-account' element={<DeleteAccount/>}/>
 
         { /** ADMIN ROUTES */}
         <Route path='/admin' element={<Index/>}/>
