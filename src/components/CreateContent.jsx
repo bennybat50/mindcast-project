@@ -218,11 +218,11 @@ function CreateContent({ itemId }) {
         </div>
         <div className="row">
           <div className="col-xl-3 col-md-6 mb-4">
-            <div className="card  h-100 py-2">
+            <div className="card cards  h-100 py-2">
               <div className="card-body">
                 <div className="row no-gutters align-items-center">
                   <div className="col mr-1">
-                    <div className="text-xs text-secondary mb-1">
+                    <div className="text-xs text-secondary mb-1 text-lights">
                       Audio files
                     </div>
                     <div className="h5 mb-0 font-weight-bold text-dark">
@@ -238,11 +238,11 @@ function CreateContent({ itemId }) {
           </div>
 
           <div className="col-xl-3 col-md-6 mb-4">
-            <div className="card  h-100 py-2">
+            <div className="card cards h-100 py-2">
               <div className="card-body">
                 <div className="row no-gutters align-items-center">
                   <div className="col mr-1">
-                    <div className="text-xs text-secondary mb-1">Users</div>
+                    <div className="text-xs text-secondary mb-1  text-lights">Users</div>
                     <div className="h5 mb-0 font-weight-bold text-dark">
                       {sortedUsers.length}
                     </div>
@@ -256,11 +256,11 @@ function CreateContent({ itemId }) {
           </div>
 
           <div className="col-xl-3 col-md-6 mb-4">
-            <div className="card h-100 py-2">
+            <div className="card cards h-100 py-2">
               <div className="card-body">
                 <div className="row no-gutters align-items-center">
                   <div className="col mr-1">
-                    <div className="text-xs text-secondary mb-1">
+                    <div className="text-xs text-secondary mb-1  text-lights">
                       Host request
                     </div>
                     <div className="h5 mb-0 font-weight-bold text-dark">
@@ -276,11 +276,11 @@ function CreateContent({ itemId }) {
           </div>
 
           <div className="col-xl-3 col-md-6 mb-4">
-            <div className="card h-100 py-2">
+            <div className="card cards h-100 py-2">
               <div className="card-body">
                 <div className="row no-gutters align-items-center">
                   <div className="col mr-1">
-                    <div className="text-xs text-secondary mb-1">
+                    <div className="text-xs text-secondary mb-1  text-lights">
                       Avg. time on app
                     </div>
                     <div className="h5 mb-0 font-weight-bold text-dark">
@@ -367,7 +367,7 @@ function CreateContent({ itemId }) {
                           <tr key={user.id}>
                             <th scope="row ">
                               {/* <span><img src={user.image} alt="" className="userImage" /></span> */}
-                              <span className="capitalize text-dark ">
+                              <span className=" text-dark ">
                                 {user.username}{" "}
                               </span>
                             </th>

@@ -186,7 +186,7 @@ function CreateUsers() {
                         {sortedUsers.map((user) => (
                           <tr key={user.id}>
                             <th scope="row">
-                              <span className="capitalize text-dark">
+                              <span className=" text-dark">
                                 {/* <img
                                   src={user.image}
                                   alt=""

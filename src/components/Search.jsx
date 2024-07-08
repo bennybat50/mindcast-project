@@ -4,7 +4,7 @@ function Search() {
   return (
     <div>
       <div class="input-group search-users m-4">
-        <div class="input-group-text bg-secondarys" id="btnGroupAddon">
+        <div class="input-group-text" id="btnGroupAddon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -18,7 +18,7 @@ function Search() {
         </div>
         <input
           type="text"
-          class="form-control"
+          class=""
           placeholder="Search..."
           aria-label="Input group example"
           aria-describedby="btnGroupAddon"

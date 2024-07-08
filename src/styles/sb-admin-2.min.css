@@ -200,6 +200,7 @@ a {
     /* background-color: var(--secondarys) !important; */
     outline: none;
     border: none !important;
+
     color: var(--secondarys) !important; 
     border: 1px solid var(--secondarys) !important;
 }
@@ -1815,17 +1816,18 @@ pre code {
 .table th {
     padding: .55rem;
     vertical-align: top;
-    border-top: 1px solid #e3e6f0
+    border: 0px solid #e3e6f0 !important
 }
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid var(--secondarys) !important;
+    border-bottom:none !important;
     color: var(--secondarys) !important;
+    font-size: 14px;
 }
 
 .table tbody+tbody {
-    border-top: 2px solid #e3e6f0
+    border-top: none !important
 }
 
 .table-sm td,
@@ -1834,13 +1836,13 @@ pre code {
 }
 
 .table-bordered {
-    border: 1px solid #e3e6f0
+    border: 0px solid #e3e6f0
 }
 
-.table-bordered td,
+/* .table-bordered td,
 .table-bordered th {
     border: 1px solid #e3e6f0
-}
+} */
 
 .table-bordered thead td,
 .table-bordered thead th {
@@ -1856,6 +1858,9 @@ pre code {
 
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, .05)
+}
+.table tbody tr {
+    border: 0px solid #e3e6f0 !important
 }
 
 .table-hover tbody tr:hover {
@@ -5023,18 +5028,25 @@ input[type=submit].btn-block {
 .navbar-dark .navbar-text a:hover {
     color: #fff
 }
-
+.cards{
+    background-color: var(--white);
+}
+.text-white{
+    color: white;
+}
 .card {
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: var(--primaryx);
+    /* background-color: var(--primaryx); */
     background-clip: border-box;
-    border: 1px solid var(--secondarys);
-    border-radius: .35rem
+    /* border: 1px solid var(--secondarys); */
+    border-radius: .35rem;
+    border: none;
 }
+
 
 .card>hr {
     margin-right: 0;
@@ -5094,7 +5106,8 @@ input[type=submit].btn-block {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
     background-color: #fff;
-    border-bottom: 1px solid #e3e6f0
+    /* border-bottom: 1px solid #e3e6f0 */
+    border: none !important;
 }
 
 .card-header:first-child {
@@ -12773,9 +12786,9 @@ tbody tr{
     font-size: 13px;
     color: var(--secondarys) !important;
 }
-.table>:not(caption)>*>* {
+/* .table>:not(caption)>*>* {
     background-color: var(--primaryx) !important;
-}
+} */
 .change-btn-green{
     padding: 2px 7px;
     color: #20C997;
