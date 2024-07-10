@@ -3,6 +3,7 @@ import Resource from "./Resource";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { BASE_URL, USER_DOMAIN } from "../utils/config";
+import CreateContentModal from "./CreateContentModal";
 
 function Content() {
   const [resources, setResources] = useState([]);
@@ -45,16 +46,26 @@ function Content() {
     return date.toLocaleString();
   };
   return (
-    <div className="mt-4">
+    <div className="">
+        <div
+        class="modal fade"
+        id="contentEdittModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <CreateContentModal />
+      </div>
       <div className="container">
-        <div className=" card pb-4">
-          <div className="card-header flex-row">
+        <div className=" card pb-4 pt-3">
+          <div className="card-header pb-4 flex-row">
             <h6 className="m-0 font-weight-bold text-dark">
               All Content ({resources.length})
             </h6>
           </div>
           <div className="container">
-            <div className="table-responsive mt-3">
+            <div className="table-responsive">
               <table className="table">
                 <thead>
                   <tr>
@@ -122,11 +133,13 @@ function Content() {
                               className="dropdown-menu dropdown-menu-left animated--grow-in"
                               aria-labelledby="userDropdown"
                             >
-                              <a className="dropdown-item" href="#">
-                                Approve
-                              </a>
-                              <a className="dropdown-item" href="#">
-                                Send feedback
+                              <a 
+                              className="dropdown-item"
+                               href="#"
+                               data-toggle="modal"
+                               data-target="#contentEdittModal"
+                               >
+                                Edit
                               </a>
                               <a
                                 className="dropdown-item text-danger"

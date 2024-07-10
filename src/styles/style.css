@@ -540,9 +540,9 @@
  font-size: 70px;
  color: #000  !important;
 }
-.modal-content{
+/* .modal-content{
   background-color: #40176C !important;
-}
+} */
 .modal-content .modal-title, h1, small{
   color: white !important;
 }

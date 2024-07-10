@@ -3,7 +3,7 @@ import React from "react";
 function Search() {
   return (
     <div>
-      <div class="input-group search-users m-4">
+      {/* <div class="input-group search-users m-4">
         <div class="input-group-text" id="btnGroupAddon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ function Search() {
           aria-label="Input group example"
           aria-describedby="btnGroupAddon"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
