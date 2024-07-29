@@ -165,10 +165,10 @@ function CreateUsers() {
             <div className="card mb-4 ms-5">
               <div className="card-header py-3 flex-row">
                 <h6 className="m-0 font-weight-bold text-dark">
-                  All Users (654)
+                  All Users ({sortedUsers.length})
                 </h6>
               </div>
-              <div className="all-users-scroll">
+              <div className="">
                 <Search />
                 <div className="container  pb-4">
                   <div className="table-responsive">
