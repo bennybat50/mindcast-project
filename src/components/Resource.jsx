@@ -166,7 +166,7 @@ function Resource() {
         </div>
 
         <Link
-          to={{ pathname: "/contentPage", state: { resources: resources } }}
+          to={{ pathname: "/admin/contentPage", state: { resources: resources } }}
         >
           <div>
             <p className="text-center view-more-social-track text-primary">

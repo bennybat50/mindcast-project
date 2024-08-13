@@ -178,7 +178,8 @@ function CreateUsers() {
                           <th>USER</th>
                           <th>EMAIL</th>
                           <th>MOOD</th>
-                          <th>PERCENTAGE</th>
+                          <th>SUBSCRIPTION</th>
+                          <th>DATE</th>
                           <th>ACTION</th>
                         </tr>
                       </thead>
@@ -219,7 +220,9 @@ function CreateUsers() {
                                 <></>
                               )}
                             </td>
-                            <td className=" text-dark">{user.percentage}</td>
+                            <td> {user.status==="paid"?<b className='text-success'>{user.status}</b>:<b className='text-warning'>{user.status}</b>} Mode</td>
+
+                            <td className=" text-dark">{new Date(user.time_created).toLocaleDateString("en-US")}</td>
                             <td className=" text-dark">
                               <li className="nav-item dropdown no-arrow">
                                 <a

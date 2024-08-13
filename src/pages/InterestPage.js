@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from "../components/Sidebar";
 import NavBar from "../components/NavBar";
-import CreateInterest from '../components/CreateInterest';
+import ManageInterest from '../components/ManageInterest';
 
 const InterestPage = () => {
   return (
@@ -10,7 +10,7 @@ const InterestPage = () => {
 
     <div style={{ width: 100 + "%" }}>
         <NavBar />
-        <CreateInterest className="p-3"/>
+        <ManageInterest className="p-3"/>
     </div>
 </div>
   )
