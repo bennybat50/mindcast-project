@@ -26,9 +26,10 @@ function Login () {
   const sendLogin= async()=>{
     setLoading(true)
     let sendData={"email":email, "password":password}
-    console.log(sendData);
+    
     const sendRes=await axios.post(`${BASE_URL}${AUTH_DOMAIN}/login`, sendData)
-    if(sendRes.data.status===true && sendRes.data.data.user.user_role===true){
+    
+    if(sendRes.data.status===true && sendRes.data.data.user.user_role==="admin"){
         window.location.href="/admin"
         localStorage.setItem("md-token",sendRes.data.data.token)
     }else{
