@@ -18,6 +18,7 @@ import PrivacyPolicy from './pages/Website/PrivacyPolicy';
 import Terms from './pages/Website/Terms';
 import Checkout from './pages/Website/Checkout';
 import DeleteAccount from './pages/Website/DeleteAccount';
+import ManageAppPage from './pages/ManageAppPage';
 
 
 
@@ -44,6 +45,7 @@ function App() {
         <Route path='/admin/createInterest' element={<InterestPage/>}/>
         <Route path='/admin/hostrequest' element={<HostRequest/>}/>
         <Route path='/admin/users' element={<Users/>}/>
+        <Route path='/admin/app-management' element={<ManageAppPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>

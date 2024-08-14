@@ -59,11 +59,17 @@ function Sidebar() {
                     <span className="nav-link d-flex" href="#" >
                         <i class='bi bi-person-raised-hand text-white'></i>
                         <span>Feed backs</span>
-                        
                     </span>
-
-                    
                 </li>
+
+               <Link to="/admin/app-management">
+                <li className="nav-item pointer">
+                        <span className="nav-link d-flex"  >
+                            <i class='bi bi-app text-white'></i>
+                            <span>App Management</span>
+                        </span>
+                    </li>
+               </Link>
 
             </ul>
         </>
