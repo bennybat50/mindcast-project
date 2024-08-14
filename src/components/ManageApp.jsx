@@ -31,9 +31,7 @@ function ManageApp () {
         `${BASE_URL}${USER_DOMAIN}/app-message`
       )
      
-      if(messageRes.data.data.title!=null){
-        setMessageData(messageRes.data.data)
-      }
+     
      
 
       const androidRes = await axios.get(
@@ -49,6 +47,11 @@ function ManageApp () {
       
 
       updateValues()
+
+      if(messageRes.data.data.title!=null){
+        setMessageData(messageRes.data.data)
+        updateValues()
+      }
 
       //console.log(res.data.data)
     } catch (error) {
@@ -110,6 +113,23 @@ function ManageApp () {
     
   }
 
+
+  const updateApps = async () => {
+
+    if(window.confirm(`Are you sure you want to update `+device)){
+      let sendData={"device":device,"v_code":vcode, "v_name":vname}
+      console.log(sendData);
+         
+        const response = await axios.post(`${BASE_URL}${USER_DOMAIN}/app-version`, sendData)
+        if(response.status===200){
+          fetchData()
+          alert(`${device} App Updated`)
+        }
+    }
+    
+  }
+
+
   const handleFormChange = event => {
     if (event.target.name === 'title') {
       setTitle(event.target.value)
@@ -121,10 +141,19 @@ function ManageApp () {
 
     if (event.target.name === 'status') {
       setStatus(event.target.value)
+      
     }
 
     if (event.target.name === 'device') {
+     
       setDevice(event.target.value)
+      if(event.target.value==="android"){
+        setVcode(androidData.v_code)
+        setVname(androidData.v_name)
+      }else if(event.target.value==="ios"){
+        setVcode(iosData.v_code)
+        setVname(iosData.v_name)
+      }
     }
 
     if (event.target.name === 'v_code') {
@@ -206,7 +235,7 @@ function ManageApp () {
                       </div>
                     </div>}
 
-                    <div className="border border-2 m-4 p-2">
+                    <div className="border border-2 m-4 p-4">
                     <br />
                   <h4>App Message</h4>
                     <br />
@@ -291,7 +320,7 @@ function ManageApp () {
                     <br />
                    <div className="d-flex justify-content-between">
                    <button type="button"  onClick={()=>updateMessage()} className='btn btn-primary' >Update</button>
-                   {messageData!=null?<button type="button"  onClick={()=>deleteMessage()} className='btn btn-danger' >Delete</button>:<></>}
+                   {messageData?<></>:<button type="button"  onClick={()=>deleteMessage()} className='btn btn-danger' >Delete</button>}
 
                    </div>
 
@@ -299,8 +328,10 @@ function ManageApp () {
                     <br />
                     </div>
                   </div>
-                  <div className='col-md-6 border border-2 m-1'>
-                   <br />
+                  <div className='col-md-6 '>
+                    
+                    <div className="border border-2 m-1 ">
+                                        <br />
                   <h4 className='px-4'>App Versions</h4>
                     
                   <div className="row">
@@ -327,6 +358,7 @@ function ManageApp () {
                   </div>
 
                   <hr />
+                  <div className="p-3">
                   <h4>Update App Form</h4>
                   <hr />
                   <div className='row'>
@@ -376,20 +408,14 @@ function ManageApp () {
                       <div className='col-md-3'>
                         <div class='pt-4'>
                          <br />
-                         <button className="btn btn-primary">Update</button>
+                         <button className="btn btn-primary" onClick={()=>updateApps()}>Update</button>
                         </div>
                       </div>
                       
 
+                  </div>
+                  </div>
                     </div>
-                   
-                    
-                   
-                   
-                    
-                    
-                    
-                    
                     <br />
                   </div>
                 </div>

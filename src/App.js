@@ -19,6 +19,7 @@ import Terms from './pages/Website/Terms';
 import Checkout from './pages/Website/Checkout';
 import DeleteAccount from './pages/Website/DeleteAccount';
 import ManageAppPage from './pages/ManageAppPage';
+import Login from './pages/Website/Login';
 
 
 
@@ -37,6 +38,7 @@ function App() {
         <Route path='/terms' element={<Terms/>}/>
         <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
         <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/md-login' element={<Login/>}/>
         <Route path='/delete-account' element={<DeleteAccount/>}/>
 
         { /** ADMIN ROUTES */}

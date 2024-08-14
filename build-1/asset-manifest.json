@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dc24b5ae.css",
+    "main.js": "/static/js/main.b81e3c57.js",
+    "static/media/pexels-pavel-danilyuk-8038328.jpg": "/static/media/pexels-pavel-danilyuk-8038328.05239722b69c4e0068ac.jpg",
+    "static/media/pexels-mart-production-7709235.jpg": "/static/media/pexels-mart-production-7709235.9844ecea669037276fa1.jpg",
+    "static/media/pexels-karolina-grabowska-6256289.jpg": "/static/media/pexels-karolina-grabowska-6256289.48f445eacecc90ba5b26.jpg",
+    "static/media/pexels-charlotte-may-5965896.jpg": "/static/media/pexels-charlotte-may-5965896.6689356de29e31df7c9a.jpg",
+    "static/media/pexels-cottonbro-studio-6686455.jpg": "/static/media/pexels-cottonbro-studio-6686455.8f82b645c0d69e091a7a.jpg",
+    "static/media/pexels-rdne-stock-project-4910947.jpg": "/static/media/pexels-rdne-stock-project-4910947.41ca6a7c470bb797649e.jpg",
+    "static/media/pexels-anna-tarazevich-7229091.jpg": "/static/media/pexels-anna-tarazevich-7229091.4d29820b4bbefbbfaf44.jpg",
+    "static/media/Apple iPhone 11 Pro Gold (2) 1.png": "/static/media/Apple iPhone 11 Pro Gold (2) 1.09f4f1a375611fbd92ba.png",
+    "static/media/Apple iPhone 11 Pro Gold 1 (2).png": "/static/media/Apple iPhone 11 Pro Gold 1 (2).c488771c4d337f6a4a48.png",
+    "static/media/Background.png": "/static/media/Background.543e0f922fda512483d6.png",
+    "static/media/585-herbs-outline.gif": "/static/media/585-herbs-outline.bb8043d86d3f90dc4438.gif",
+    "static/media/business-1.png": "/static/media/business-1.f2301ac85db66f4cbe10.png",
+    "static/media/business-5.png": "/static/media/business-5.4a45065b9887e197789a.png",
+    "static/media/business-2.png": "/static/media/business-2.afe4cb04ce5ae96844da.png",
+    "static/media/188-microphone-recording-outline.gif": "/static/media/188-microphone-recording-outline.2c07514671fd16974c4e.gif",
+    "static/media/business-4.png": "/static/media/business-4.7baf9791ee4475db9097.png",
+    "static/media/business-3.png": "/static/media/business-3.7d96a2f0bf84417bb9e8.png",
+    "static/media/Group 120524 1.png": "/static/media/Group 120524 1.0868433e57d5826320ca.png",
+    "static/media/Frame 1.png": "/static/media/Frame 1.c3a4dc5439bdc51659f8.png",
+    "static/media/Avatar.png": "/static/media/Avatar.1e8591dda530f7ace734.png",
+    "static/media/profileImage-one.webp": "/static/media/profileImage-one.6c8e506f227bf348aa40.webp",
+    "index.html": "/index.html",
+    "main.dc24b5ae.css.map": "/static/css/main.dc24b5ae.css.map",
+    "main.b81e3c57.js.map": "/static/js/main.b81e3c57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc24b5ae.css",
+    "static/js/main.b81e3c57.js"
+  ]
+}
