@@ -84,9 +84,7 @@ function HomePage() {
                         <b>We match you with topics that are your preference</b>
                       </h3>
                       <p>
-                        Discover practical tools and techniques to manage
-                        stress, anxiety, and depression, and cultivate a greater
-                        sense of mindfulness and resilience.
+                      Dive into insights, strategies, and stories that nurture your mind and uplift your spirit, chosen specifically to match your wellness journey. Make every read a step toward a healthier, more balanced mindset
                       </p>
                       <ul>
                         <li>Positive thinking</li>
@@ -114,9 +112,7 @@ function HomePage() {
                       <b>Latest podcast episodes</b>
                     </h3>
                     <p>
-                      Discover practical tools and techniques to manage stress,
-                      anxiety, and depression, and cultivate a greater sense of
-                      mindfulness and resilience.
+                    Stay informed and inspired with our newest episodes. Dive into fresh perspectives, expert insights, and stories crafted to support your journey in mental well-being. Each episode is a step closer to clarity, resilience, and personal growth.
                     </p>
                   </div>
                 </div>

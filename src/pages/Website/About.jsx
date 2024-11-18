@@ -94,9 +94,7 @@ function About() {
                       <b>Over 1000+ people trust us</b>
                     </h3>
                     <p>
-                      Clarity gives you the blocks & components you need to
-                      create a truly professional website, landing page or admin
-                      panel for your SaaS.
+                    Join a thriving community dedicated to growth and mental wellness. Trusted by thousands, we bring together insights, resources, and support to empower each member’s journey toward a healthier mind and a more fulfilled life.
                     </p>
                   </div>
                 </center>
